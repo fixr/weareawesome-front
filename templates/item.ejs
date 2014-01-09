@@ -1,0 +1,17 @@
+<div class="item clearfix">
+  <div class="col-left score">
+    <span><%= visits %></span>
+  </div>
+
+  <div class="col-right info">
+    <div class="title"><%= title %></div>
+    <div class="date"><%= new Date(created_at).toLocaleString() %></div>
+    <div class="description">
+      <% if(url === "" || url === null) { %>
+        <%= description %>
+      <% } else { %>
+        <a href="<%= url %>" data-open-in-browser="true"><%= url %></a>
+      <% } %>
+    </div>
+  </div>
+</div>

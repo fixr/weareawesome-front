@@ -1,0 +1,262 @@
+/* Make everything behave as border-box (http://paulirish.com/2012/box-sizing-border-box-ftw/) */
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+  font-family: 'OpenSans', 'Helvetica', sans-serif;
+}
+
+.wrapper {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+  text-align: right;
+}
+
+
+/* ---[ HEADER ]--- */
+
+header {
+	position: fixed; top: 0; left: 0; z-index: 10;
+  width: 100%; height: 55px;
+	background-color: #eee;
+	border-bottom: #E8E8E8 4px solid;
+  opacity: 0.95;
+}
+
+	#logo {
+		position: absolute; top: 12px; left: 20px;
+	}
+
+  #btn-share {
+    position: absolute; top: 12px; right: 20px;
+  }
+
+
+/* ---[ BUTTONS ]--- */
+
+.btn, a.btn {
+  display: block; padding: 5px;
+  font-family: 'Aller'; font-size: 16px; color: #F55823; text-transform: uppercase;
+}
+
+a.btn, a.btn:visited {
+  text-decoration: none;
+}
+
+
+/* ---[ MAIN ]--- */
+
+#main {
+  margin-top: 65px;
+}
+
+
+  /* --- header --- */
+  #main .header {
+    position: relative; margin: 10px 0 0 0;
+  }
+
+    #main .header .title {
+      height: 18px; margin-right: 20px;
+      background-color: #67666B;
+    }
+
+    #main.col-2 .header .title {
+     float: left; width: 20%; max-width: 70px;
+    }
+
+    #main.col-1 .header .title {
+     max-width: 120px;
+    }  
+
+      #main .header .title span {
+        display: block; padding-top: 3px;
+        font-family: 'Aller'; font-size: 10px; text-align: center; color: white;
+      }
+
+    #main .header .description {
+      float: left; width: 70%;
+    }
+
+      #main .header .description span {
+        display: block; margin-top: 3px;
+        font-family: 'Aller'; font-size: 10px; color: #848484;
+      }
+
+
+  /* --- content --- */
+  #content {
+    position: relative; margin: 12px 0 0 0;
+  }
+
+    /* --- items --- */
+    #content .item {
+      margin-bottom: 10px;
+    }
+
+      #content .item .col-left {
+        float: left; width: 20%; max-width: 70px; margin-right: 20px;
+      }
+
+        #content .item .score {
+          padding: 5px 0;
+          font-family: 'OpenSans'; color: #999; font-size: 20px; text-align: right;
+        }
+
+        #content.item .item .score {
+          font-size: 24px;
+        }
+
+
+      #content .item .col-right {
+        float: left;  width: 70%;
+        font-family: 'OpenSans';
+      }
+
+        #content .item .info .title,
+        #content .item .info a,
+        #content .item .info a:link
+        #content .item .info a:visited {
+          display: block; padding: 5px 0;
+          color: #886B67; font-size: 20px; text-decoration: none;
+        }
+
+        #content.item .item .info .title {
+          font-size: 24px; 
+        }
+
+        #content.item .item .info .date {
+          margin-bottom: 5px;
+          color: #999; font-size: 12px;
+        }
+
+        #content.item .item .info .description {
+          margin: 20px 0;
+          color: #666; font-size: 18px;
+        }
+
+        #content .item .tag {
+          padding: 2px 8px;
+          font-family: 'Aller'; background-color: #EBD5B4; color: white; font-size: 12px;
+          -webkit-border-radius: 5px;
+             -moz-border-radius: 5px;
+                  border-radius: 5px;
+        }
+
+
+    /* --- forms --- */
+    #content label {
+      display: block; padding-bottom: 3px;
+      font-family: 'Aller'; font-size: 16px; color: #66666B; text-transform: uppercase;
+    }
+
+    #content input,
+    #content select,
+    #content textarea {
+      padding: 7px;
+      border: 1px solid #C8C8CA;
+      font-family: 'Aller'; font-size: 12px; color: #66666B;
+    }
+
+    #content input:focus,
+    #content select:focus,
+    #content textarea:focus {
+      border: 1px solid #F88863;
+    }
+
+    #content input, #content select {
+      height: 34px;
+    }
+
+    #content input, #content textarea {
+      width: 100%;
+    }
+
+    #content textarea {
+      height: 100px;
+    }
+
+
+  /* --- pagination --- */
+  #pagination, #actions {
+    margin-top: 30px;
+  }
+
+    #pagination span {
+      font-family: 'Aller'; font-size: 14px; color: #999; text-transform: uppercase;
+    }
+
+      #pagination span a {
+        display: none;
+      }
+
+
+  /* --- footer --- */
+  footer {
+    margin: 10px 0; padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+
+    footer a,
+    footer a:link,
+    footer a:visited {
+      font-family: 'Aller'; font-size: 12px; color: #bbb; text-decoration: none;
+    }
+
+
+/* ---[ NOTIFICATIONS MODAL ]--- */
+
+#notifications {
+  display: none;
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0; margin: auto; padding: 10px; width: 95%; height: 95%; z-index: 100;
+  background-color: rgba(255,255,255,0.96);
+  -webkit-box-shadow: 0 0 15px 2px rgba(0,0,0,0.1);
+          box-shadow: 0 0 15px 2px rgba(0,0,0,0.1);
+  font-family: 'OpenSans'; color: #666;
+}
+
+  #notifications .title {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 24px; text-align: center; text-transform: uppercase;
+  }
+
+  #notifications .message {
+    font-size: 14px;
+  }
+
+  #notifications .actions {
+    position: absolute; bottom: 20px; right: 20px;
+  }
+
+  #notifications .loading-text {
+    display: none;
+  }
+
+
+  .loading #notifications {
+    display: block !important;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+    .loading #notifications .title,
+    .loading #notifications .message,
+    .loading #notifications .actions {
+      display: none;
+    }
+
+  .loading #notifications .loading-text {
+    display: block;
+    font-size: 20px; color: white; text-align: center;
+  }
+
+

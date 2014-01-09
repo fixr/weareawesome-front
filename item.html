@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>We Are Awesome!</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/wra.css">
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="inappbrowser.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo"><img src="img/logo.png" width="150" height="28" alt=""></div>
+      <a href="index.html" id="btn-share" class="btn">< back</a>
+    </header>
+
+    <!-- MAIN -->
+    <section id="main" class="col-2">
+      
+      <div class="header clearfix">
+        <div class="title"><span>STORY</span></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div id="content" class="item">
+        <!-- INFO: se llena con templates/item.ejs -->
+      </div> <!-- #content -->
+    
+      <footer class="wrapper clearfix">
+        <span><a href="#" class="pull-left">@weareawesome</a></span>
+        <span><a href="#" class="pull-right" data-role="about">celebrate humankind!</a></span>
+      </footer>
+
+    </section> <!-- #main -->
+
+    <div id="notifications">
+      <div class="loading-text">loading...</div>
+      <div class="title"></div>
+      <div class="message"></div>
+      <div class="actions">
+        <a href="#" class="btn" data-role="close-modal">+close</a>
+      </div>
+    </div>
+
+    <script src="js/vendor/zepto.min.js"></script>
+    <script src="js/vendor/ejs.min.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

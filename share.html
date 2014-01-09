@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>We Are Awesome!</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/wra.css">
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="inappbrowser.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo"><img src="img/logo.png" width="150" height="28" alt=""></div>
+      <a href="index.html" id="btn-share" class="btn">< back</a>
+    </header>
+
+    <!-- MAIN -->
+    <section id="main" class="col-1">
+      
+      <div class="header clearfix">
+        <div class="title"><span>SHARE A STORY</span></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div id="content" class="share wrapper">
+
+        <form action="#">
+          
+          <div class="item">
+            <label for="item_title">Title</label>
+            <input type="text" name="item[title]" value="" placeholder="" id="item_title">
+          </div>
+
+          <div class="item">
+            <label for="item_kind">Kind</label>
+            <select id="item_kind">
+              <option value=""></option>
+              <option value="url">Awesome person on an article/video/etc</option>
+              <option value="description">A story I want to share</option>
+            </select>
+          </div>
+
+          <div class="item" style="display: none;">
+            <label for="item_url">URL</label>
+            <input type="text" name="item[url]" value="" placeholder="" id="item_url">
+          </div>
+
+          <div class="item" style="display: none;">
+            <label for="item_description">Description</label>
+            <textarea name="item[description]" id="item_description"></textarea>
+          </div>
+
+        </form>
+
+      </div> <!-- #content -->
+
+      <div id="actions" class="wrapper clearfix">
+        <span><a href="#" class="btn pull-right" data-role="submit">+ submit</a></span>
+      </div>
+    
+      <footer class="wrapper clearfix">
+        <span><a href="#" class="pull-left">@weareawesome</a></span>
+        <span><a href="#" class="pull-right" data-role="about">celebrate humankind!</a></span>
+      </footer>
+
+    </section> <!-- #main -->
+
+    <div id="notifications">
+      <div class="loading-text">loading...</div>
+      <div class="title"></div>
+      <div class="message"></div>
+      <div class="actions">
+        <a href="#" class="btn" data-role="close-modal">+close</a>
+      </div>
+    </div>
+
+    <script src="js/vendor/zepto.min.js"></script>
+    <script src="js/vendor/ejs.min.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

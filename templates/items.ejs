@@ -1,0 +1,18 @@
+<% for(var i=0; i<items.length; i++) { %>
+
+  <div class="item clearfix">
+    <div class="col-left score">
+      <span><%= items[i].visits %></span>
+    </div>
+
+    <div class="col-right info">
+      <% if(items[i].url === "" || items[i].url === null) { %>
+        <a href="item.html?item=<%= items[i].id %>"><%= items[i].title %></a>
+        <span class="tag">personal story</span>
+      <% } else { %>
+        <a href="http://weareawesome.herokuapp.com/items/<%= items[i].id %>" data-open-in-browser="true"><%= items[i].title %></a>
+      <% } %>
+    </div>
+  </div>
+
+<% } %>
